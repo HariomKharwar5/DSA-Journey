@@ -8,6 +8,7 @@ void foo(int n,int sum)
     j=n/10;
     sum = sum + k;
     foo(j,sum);
+    
     cout<<k;
   }  
 
