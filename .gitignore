@@ -1,1 +1,3 @@
-*.exegit 
+*.exe
+*.o
+*.obj
