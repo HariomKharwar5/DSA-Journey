@@ -34,7 +34,7 @@ int main()
     cout<<endl;
     int k = 50;
     int n = v.size();
-    if(k>n) k = k%n;
+    if(k>=n) k = k%n;
     reversepart(0,n-k-1,v);
     reversepart(n-k,n-1,v);
     reversepart(0,n-1,v);
