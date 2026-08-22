@@ -1,30 +1,42 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 int main()
 {
-   int n;
-    cout<<"Enter the Size of Array : ";
-    cin>>n;
-    int x;
-    cout<<"Enter the Elements : ";
+    int n;
+
+    cout << "Enter the Size of Array: ";
+    cin >> n;
+
     int arr[n];
-    //Taking Input....
-    for(int i=0;i<n;i++)
+
+    cout << "Enter the Elements: ";
+
+    for(int i = 0; i < n; i++)
     {
-        cin>>arr[i];
+        cin >> arr[i];
     }
-    cout<<"Enter the Element to Search : ";
-    cin>>x;
-    //Output....
-    for(int i=0;i<n;i++)
+
+    int x;
+    cout << "Enter the Element to Search: ";
+    cin >> x;
+
+    bool found = false;
+
+    for(int i = 0; i < n; i++)
     {
-        if(arr[i]==x)
+        if(arr[i] == x)
         {
-            cout<<"Element is present at idx : "<<i;
+            cout << "Element is present at idx: " << i << endl;
+            found = true;
+            break;
         }
-        
     }
-    cout<<"Invalid Number Entered.";
-    
+
+    if(!found)
+    {
+        cout << "Invalid Number Entered.";
+    }
+
     return 0;
 }

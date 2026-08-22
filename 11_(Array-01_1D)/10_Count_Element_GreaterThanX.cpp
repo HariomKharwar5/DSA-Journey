@@ -25,7 +25,7 @@ int main()
         }
         
     }
-    cout<<"Total Number greater than X is : "<<count;
+    cout<<"Total Number greater than reference is : "<<count;
     
     return 0;
 }
